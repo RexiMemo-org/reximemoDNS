@@ -16,14 +16,19 @@ The default RexiMemo server IP is **141.147.76.115**. All other DNS queries are 
 
 `conntest.nintendowifi.net` is deliberately not intercepted, matching RexiMemo's server-side DNS configuration.
 
-## Setup
+## Running on Windows:
+
+Run the .exe provided in this release. You may have to click past a warning from Windows SmartScreen (as it sometimes turns its nose up at applications bundled by PyInstaller) or your firewall (as it needs to listen for DNS requests).
+
+## Setup:
 
 1. Put the computer running reximemoDNS and the DSi on the same local network.
-2. Install the requirements.
-3. Run reximemoDNS as Administrator/root because DNS uses port 53.
-4. Enter the **Primary DNS** address printed by the program into the DSi connection settings.
-5. Use `008.008.008.008` as Secondary DNS.
-6. Save the connection and open Flipnote Studio → Flipnote Hatena.
+2. Run reximemoDNS as Administrator/root because DNS uses port 53.
+3. Enter the **Primary DNS** address printed by the program into the DSi connection settings.
+4. Use `008.008.008.008` as Secondary DNS.
+5. Save the connection and open Flipnote Studio → Flipnote Hatena.
+
+## Running on macOS & Linux:
 
 ### Install requirements
 
@@ -32,14 +37,6 @@ python -m pip install -r requirements.txt
 ```
 
 ### Run
-
-Windows, from an Administrator terminal:
-
-```powershell
-python reximemoDNS.py
-```
-
-Linux/macOS:
 
 ```bash
 sudo python3 reximemoDNS.py
