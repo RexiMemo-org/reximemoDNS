@@ -28,7 +28,7 @@ Run the .exe provided in this release. You may have to click past a warning from
 4. Use `008.008.008.008` as Secondary DNS.
 5. Save the connection and open Flipnote Studio → Flipnote Hatena.
 
-## Running on macOS & Linux:
+## Running from command line:
 
 ### Install requirements
 
